@@ -1,6 +1,7 @@
-# eternal-pulsar
+# Eternal-pulsar (ms17-010)
 
 Eternalblue-Doublepulsar without Metasploit and Python <br> 
+base on shadowbroker's exploit (fuzzbunch)
 - you can run it on windows or linux (need wine)
 
 
@@ -16,6 +17,10 @@ you can also use other payloads <b>windows/shell_reverse_tcp</b> (stageless), <b
 `svchost.exe ` <br>
 `explorer.exe `<br>
 `spoolsv.exe `<br>
+
+### EternalBlue & Doublepulsar  (--help )
+
+[help.txt](https://github.com/sailay1996/eternal-pulsar/blob/master/help.txt)
 
 
 ### Backdoor Install with EternalBlue 
@@ -34,3 +39,5 @@ you can also use other payloads <b>windows/shell_reverse_tcp</b> (stageless), <b
 
 #### pwned !!!
 
+
+#### [@404death](https://twitter.com/404death)
