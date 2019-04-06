@@ -43,6 +43,7 @@ you can also use other payloads <b>windows/shell_reverse_tcp</b> (stageless), <b
 #### pwned !!!
 ![test3](https://github.com/sailay1996/eternal-pulsar/blob/master/img/3.jpg)
 
-Thanks for watching here !!!
+Thanks for watching here !!! <br>
+I hope this will help you in your oscp journey .
 <br><br>
 #### [@404death](https://twitter.com/404death)
