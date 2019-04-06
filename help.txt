@@ -1,0 +1,90 @@
+C:\sai\ms17-010>Eternalblue-2.2.0.exe --help
+Eternalblue 2.2.0
+Usage: Eternalblue-2.2.0.exe
+Options:
+--NetworkTimeout S16 (default: 60)
+Timeout for blocking network calls (in seconds). Use -1 for no timeout.
+--TargetIp IPv4
+Target IP Address
+--TargetPort TcpPort (default: 445)
+Port used by the SMB service for exploit connection
+--VerifyTarget Boolean (default: true)
+Validate the SMB string from target against the target selected before exp
+loitation.
+--VerifyBackdoor Boolean (default: true)
+Validate the presence of the DOUBLE PULSAR backdoor before throwing. This
+option must be enabled for multiple exploit attempts.
+--MaxExploitAttempts U32 (default: 3)
+Number of times to attempt the exploit and groom. Disabled for XP/2K3.
+--GroomAllocations U32 (default: 12)
+Number of large SMBv2 buffers (Vista+) or SessionSetup allocations (XK/2K3
+) to do.
+[--LogFile String]
+Where to write log file
+--OutConfig String (default: stdout)
+Where to write output parameters file
+--ValidateOnly Boolean (default: false)
+Stop execution after parameter validation
+--Target Choice
+Operating System, Service Pack, and Architecture of target OS
+XP
+Windows XP 32-Bit All Service Packs
+WIN72K8R2
+Windows 7 and 2008 R2 32 - Bit and 64 - Bit All Service Packs        
+ 
+C:\sai\ms17-010>Doublepulsar-1.3.1.exe --help
+Doublepulsar 1.3.1
+Usage: Doublepulsar-1.3.1.exe
+Options:
+--NetworkTimeout S16 (default: 60)
+Timeout for blocking network calls (in seconds).  Use -1 for no timeout.
+--TargetIp IPv4
+Target IP Address
+--TargetPort TcpPort (default: 445)
+Port used by the Double Pulsar back door
+[--LogFile String]
+Where to write log file
+--OutConfig String (default: stdout)
+Where to write output parameters file
+--ValidateOnly Boolean (default: false)
+Stop execution after parameter validation
+--Protocol Choice (default: SMB)
+Protocol for the backdoor to speak
+SMB
+Ring 0 SMB (TCP 445) backdoor
+RDP
+Ring 0 RDP (TCP 3389) backdoor
+--Architecture Choice (default: x86)
+Architecture of the target OS
+x86
+x86 32-bits
+x64
+x64 64-bits
+--Function Choice (default: OutputInstall)
+Operation for backdoor to perform
+OutputInstall
+Only output the install shellcode to a binary file on disk.
+--OutputFile String
+Full path to the output file
+Ping
+Test for presence of backdoor
+RunDLL
+Use an APC to inject a DLL into a user mode process.
+--DllPayload LocalFile
+DLL to inject into user mode
+--DllOrdinal U32 (default: 1)
+The exported ordinal number of the DLL being injected to call
+--ProcessName String (default: lsass.exe)
+Name of process to inject into
+--ProcessCommandLine String (default: )
+Command line of process to inject into
+RunShellcode
+Run raw shellcode
+--ShellcodeFile LocalFile
+Full path to the file containing shellcode
+--ShellcodeData LocalFile
+Full path to the file containing shellcode to run
+Uninstall
+Remove's backdoor from system
+ 
+C:\sai\ms17-010>
