@@ -1,7 +1,7 @@
 # Eternal-pulsar (ms17-010)
 
-Eternalblue-Doublepulsar without Metasploit and Python <br> 
-base on shadowbroker's exploit (fuzzbunch)
+Eternalblue-Doublepulsar without Metasploit and Python ([FuzzBunch_notes](https://github.com/sailay1996/eternal-pulsar/blob/master/FuzzBunch-notes/README.md))<br> 
+base on shadowbroker's exploit ([fuzzbunch](https://github.com/misterch0c/shadowbroker))
 - you can run it on windows or linux (need wine)
 
 
