@@ -4,6 +4,12 @@ Eternalblue-Doublepulsar without Metasploit and Python ([FuzzBunch_notes](https:
 base on shadowbroker's exploit ([fuzzbunch](https://github.com/misterch0c/shadowbroker))
 - you can run it on windows or linux (need wine)
 
+### Find smb vulns in a network range.
+`nmap -A -p 139,445 10.1.1.1-254 -oG smb_service.txt`
+
+`cat smb_service.txt | grep -i windows | cut -d" " -f2 > smb_machines.txt`
+
+`for vul in $(find / -name smb*vuln*.nse | cut -d"/" -f 6); do nmap -v -p 139,445 --script=$vul -iL smb_machines.txt -oN smb_vulns_$vul.txt; done`
 
 ### Create payload with msfvenom (staged)
 
